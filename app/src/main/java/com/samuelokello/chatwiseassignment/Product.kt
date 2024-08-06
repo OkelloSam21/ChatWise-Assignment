@@ -3,6 +3,7 @@ package com.samuelokello.chatwiseassignment
 
 import com.google.gson.annotations.SerializedName
 
+
 data class Product(
     @SerializedName("availabilityStatus")
     val availabilityStatus: String,

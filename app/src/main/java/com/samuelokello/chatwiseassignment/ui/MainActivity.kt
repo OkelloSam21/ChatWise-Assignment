@@ -1,4 +1,4 @@
-package com.samuelokello.chatwiseassignment
+package com.samuelokello.chatwiseassignment.ui
 
 import android.content.Intent
 import android.os.Bundle

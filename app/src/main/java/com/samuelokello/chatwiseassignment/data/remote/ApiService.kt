@@ -1,5 +1,6 @@
-package com.samuelokello.chatwiseassignment
+package com.samuelokello.chatwiseassignment.data.remote
 
+import com.samuelokello.chatwiseassignment.Product
 import retrofit2.http.GET
 
 interface ApiService {
