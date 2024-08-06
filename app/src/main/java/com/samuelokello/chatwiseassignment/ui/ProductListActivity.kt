@@ -1,4 +1,4 @@
-package com.samuelokello.chatwiseassignment
+package com.samuelokello.chatwiseassignment.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.Gson
+import com.samuelokello.chatwiseassignment.domain.ProductRepository
+import com.samuelokello.chatwiseassignment.R
 import kotlinx.coroutines.launch
 
 class ProductListActivity : AppCompatActivity() {
@@ -20,8 +23,10 @@ class ProductListActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = ProductAdapter(emptyList()) { product ->
-            val intent = Intent(this, ProductDetailActivity::class.java)
-            intent.putExtra("product", product)
+            val productJson = Gson().toJson(product)
+            val intent = Intent(this, ProductDetailActivity::class.java).apply {
+                putExtra("product", productJson)
+            }
             startActivity(intent)
         }
         recyclerView.adapter = adapter

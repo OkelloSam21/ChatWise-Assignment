@@ -1,5 +1,7 @@
-package com.samuelokello.chatwiseassignment
+package com.samuelokello.chatwiseassignment.domain
 
+import com.samuelokello.chatwiseassignment.data.remote.ApiService
+import com.samuelokello.chatwiseassignment.Product
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
