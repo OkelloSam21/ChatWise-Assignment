@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.gson.Gson
-import com.samuelokello.chatwiseassignment.Product
+import com.samuelokello.chatwiseassignment.model.Product
 import com.samuelokello.chatwiseassignment.R
 import com.samuelokello.chatwiseassignment.addapter.ReviewAdapter
 

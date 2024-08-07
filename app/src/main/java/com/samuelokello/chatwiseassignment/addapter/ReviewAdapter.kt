@@ -7,7 +7,7 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.samuelokello.chatwiseassignment.R
-import com.samuelokello.chatwiseassignment.Review
+import com.samuelokello.chatwiseassignment.model.Review
 
 class ReviewAdapter(private val reviews: List<Review>) : RecyclerView.Adapter<ReviewAdapter.ViewHolder>() {
 

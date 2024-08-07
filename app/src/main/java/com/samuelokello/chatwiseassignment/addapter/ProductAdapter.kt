@@ -8,7 +8,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.samuelokello.chatwiseassignment.Product
+import com.samuelokello.chatwiseassignment.model.Product
 import com.samuelokello.chatwiseassignment.R
 
 class ProductAdapter(

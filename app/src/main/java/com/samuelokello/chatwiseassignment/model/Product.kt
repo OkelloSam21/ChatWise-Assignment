@@ -1,4 +1,4 @@
-package com.samuelokello.chatwiseassignment
+package com.samuelokello.chatwiseassignment.model
 
 
 import com.google.gson.annotations.SerializedName
