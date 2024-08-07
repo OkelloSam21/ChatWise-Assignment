@@ -1,4 +1,4 @@
-package com.samuelokello.chatwiseassignment.ui
+package com.samuelokello.chatwiseassignment.addapter
 
 import android.view.LayoutInflater
 import android.view.View
