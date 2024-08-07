@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.samuelokello.chatwiseassignment.R
+import com.samuelokello.chatwiseassignment.addapter.ProductAdapter
 import com.samuelokello.chatwiseassignment.domain.ProductRepository
 import kotlinx.coroutines.launch
 

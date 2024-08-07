@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">ChatWise Assignment</string>
     <string name="view_products">View Products</string>
+    <string name="products_list">Products List</string>
+    <string name="product_image">product image</string>
+    <string name="product_details">Product Details</string>
+    <string name="back">back</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="reviews">Reviews</string>
+    <string name="brand">Brand: %1$s</string>
+    <string name="price">Price: $%1$s</string>
+    <string name="discount_off">Discount: %1$.2f%% off</string>
+    <string name="category">Category: %1$s</string>
+    <string name="in_stock">In Stock: %1$s</string>
+    <string name="status">Status: %1$s</string>
+    <string name="sku">SKU: %1$s</string>
+    <string name="weight_g">Weight: %1$sg</string>
+    <string name="dimensions_w_x_h_x_d">Dimensions: %1$sW x %2$sH x %3$sD</string>
+    <string name="warranty">Warranty: %1$s</string>
+    <string name="minimum_order">Minimum Order: %1$s</string>
 </resources>

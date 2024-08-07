@@ -14,13 +14,24 @@
         android:orientation="horizontal"
         android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/productImage"
+        <FrameLayout
             android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@string/product_image"
-            android:scaleType="centerCrop"
-            android:background="#EFEFEF"/>
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/product_image"
+                android:scaleType="centerCrop"
+                android:background="#EFEFEF"/>
+
+            <ProgressBar
+                android:id="@+id/imageProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,6 +53,14 @@
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
                 android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
