@@ -3,10 +3,13 @@ package com.samuelokello.chatwiseassignment.ui
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.samuelokello.chatwiseassignment.R
+import coil.load
 import com.samuelokello.chatwiseassignment.Product
+import com.samuelokello.chatwiseassignment.R
 
 class ProductAdapter(
     private var products: List<Product>,
@@ -22,7 +25,14 @@ class ProductAdapter(
         val product = products[position]
         holder.title.text = product.title
         holder.description.text = product.description
-//        holder.price.text = "Price: $${product.price}"
+        "Price: $${product.price}".also { holder.price.text = it }
+        holder.imageProgressBar.visibility = View.VISIBLE
+        holder.image.load(product.images.first()) {
+            listener(
+                onSuccess = { _, _ -> holder.imageProgressBar.visibility = View.GONE },
+                onError = { _, _ -> holder.imageProgressBar.visibility = View.GONE }
+            )
+        }
         holder.itemView.setOnClickListener { onItemClick(product) }
     }
 
@@ -36,6 +46,8 @@ class ProductAdapter(
     class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val title: TextView = itemView.findViewById(R.id.productTitle)
         val description: TextView = itemView.findViewById(R.id.productDescription)
-//        val price: TextView = itemView.findViewById(R.id.productPrice)
+        val price: TextView = itemView.findViewById(R.id.productPrice)
+        val image: ImageView = itemView.findViewById(R.id.productImage)
+        val imageProgressBar: ProgressBar = itemView.findViewById(R.id.imageProgressBar)
     }
 }
